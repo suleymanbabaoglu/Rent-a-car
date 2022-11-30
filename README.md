@@ -1,4 +1,37 @@
-# rentacar
+# rentacar.backend
+
+This project was developed with ASP.NET Core Web API + EntityFramework CodeFirst + MySQL DB.
+
+## Database Setup
+
+After Mysql installation
+
+```sh
+in appsettings.json : DbSettings should Update with database connection string
+```
+
+```sh
+PackageManager Console Command: update-database
+```
+
+### Compile and Build
+
+```sh
+PackageManager Console Command: dotnet build
+```
+
+### Run Project
+
+```sh
+in Project Directory : dotnet run RentACar.Backend.dll
+```
+
+
+   ----------------------------------------------------------------
+
+
+
+# rentacar.frontend
 
 This template should help get you started developing with Vue 3 in Vite.
 
