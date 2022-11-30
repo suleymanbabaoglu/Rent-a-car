@@ -28,3 +28,6 @@ coverage
 *.sw?
 
 
+*.2
+*.vs
+*.vs/*
