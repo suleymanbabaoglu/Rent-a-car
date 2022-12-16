@@ -46,7 +46,7 @@
       </v-row>
     </v-col>
     <v-col>
-      <v-btn color="primary" @click="rentCar">Submit</v-btn>
+      <v-btn color="primary" @click="createRental">Submit</v-btn>
     </v-col>
   </v-form>
   <v-row>
@@ -124,6 +124,17 @@ onMounted(() => {
     });
   });
 });
+
+const createRental = async () => {
+  let status = await axios.post(
+      "http://localhost:5270/api/Rental",
+      rental.value
+  );
+  if (status) {
+    customers.value.push(rental.value);
+    location.reload();
+  }
+};
 </script>
 
 <style scoped></style>
